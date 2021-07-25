@@ -6,42 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body{
-            padding: 0;
-            margin: 0;
-        }
-        .header {
-            width: 100%;
-            height: 50px;
-            background-color: chocolate;
-            display: flex;
-            justify-content: space-between;
-            flex-direction: row;
-            align-items: center;
-        }
-        .logo {
-            margin: 5px;
-        }
-        .navigation {
-            list-style-type: none;
-            color: darkblue;
-            display: flex;
-            flex-direction: row;
-        }
-        .navigation li {
-            width: 100px;
-        }
-        @media only screen and (max-width: 480px) {
-            
-        }
-            
-        
+body{
+    background-color:midnightblue;
+    margin: 0;
+    padding: 0;
+}
+.kontenjer{
+    height: 320px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 150px;
+    background-color: midnightblue;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.kocka{
+    width: 33%;
+    height: 320px;
+    background-color: rgb(255, 0, 0);
+    border-radius: 5px;
+    display: flex;
+    margin-left: 10px;
+    margin-right: 10px;
+    align-items: center;
+}
+       h1{
+           color: rgb(22, 1, 1);
+           font-size: 25px;
+           margin: 10px;
+           padding: 0;
+       }
+       .p{
+           padding: 0px;
+           color: #ace675;
+           font-size: 17px;
+           text-align: center;
+       }
+       @media(max-width: 1152px){
+           .kontenjer{
+               flex-wrap: wrap;
+           }
+           .kocka{
+               margin: 10px;
+               width: 70px;
+           }
+       }
     </style>
-   
 </head>
 <body>
- 
     
-    
+        <div class="kontenjer">
+        <div class="kocka">
+            <span class="p">Category</p>
+            <h1>Raclette Blueberry Nextious Level</h1>
+            <p>Photo booth fam kinfolk cold-pressed sriracha leggings 
+                jianbing microdosing tousled waistcoat.</p>
+                <p><a href="#">Learn More</a></p>
+            </div>
+            <div class="kocka">
+            <span class="p">Category</p>
+            <h1>Ennui Snackwave Thundercats</h1>
+            <p>Photo booth fam kinfolk cold-pressed sriracha leggings 
+                jianbing microdosing tousled waistcoat.</p>
+                <p><a href="#">Learn More</a></p>
+            </div>
+            <div class="kocka">
+            <span class= "p">Category</p>
+            <h1>Selvage Poke Waistcoat Godard</h1>
+            <p>Photo booth fam kinfolk cold-pressed sriracha leggings 
+                jianbing microdosing tousled waistcoat.</p>
+                <p><a href="#">Learn More</a></p>
+              </span>  
+            </div>
+        </div> 
 </body>
 </html>
